@@ -41,6 +41,29 @@
             bottom: 0;
             width: 100%;
         }
+        section {
+            margin: 20px 0;
+        }
+        #gallery div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        #gallery img {
+            width: 30%;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        form {
+            margin-top: 10px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
     </style>
 </head>
 <body>
@@ -49,6 +72,8 @@
         <nav>
             <a href="#features">Features</a>
             <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#testimonials">Testimonials</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -66,9 +91,37 @@
                 <li>Destination Guides</li>
             </ul>
         </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div>
+                <img src="An_illustration_of_a_real_time_safety_alert_notifi.png" alt="Real-Time Safety Alerts">
+                <img src="A_mock-up_of_a_travel_app_interface_named_Expediti.png" alt="Booking Integration">
+                <img src="An_illustration_representing_the_community_support.png" alt="Community Support">
+            </div>
+        </section>
+        <section id="testimonials">
+            <h2>User Testimonials</h2>
+            <blockquote>
+                <p>"Expedition Ally made my travel experience stress-free!" - Alex T.</p>
+            </blockquote>
+            <blockquote>
+                <p>"I love the real-time alerts; I felt safe throughout my trip." - Jamie L.</p>
+            </blockquote>
+        </section>
         <section id="contact">
             <h2>Contact Us</h2>
-            <p>If you have any questions, feel free to reach out!</p>
+            <form action="https://formspree.io/f/mqkzjvva" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <input type="submit" value="Send">
+            </form>
         </section>
     </div>
     <footer>
