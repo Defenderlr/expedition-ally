@@ -34,6 +34,34 @@
         nav a:hover {
             color: #ffdd57; /* Yellow hover effect */
         }
+        .hero {
+            background-image: url('path/to/hero-background.jpg'); /* Add your hero image path */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.5em;
+        }
+        .cta-button {
+            background-color: #ffdd57; /* Yellow call to action */
+            color: #333;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #ffd700; /* Darker yellow on hover */
+        }
         .container {
             width: 80%;
             margin: auto;
@@ -98,6 +126,20 @@
         input[type="submit"]:hover {
             background-color: #005fa3; /* Darker blue on hover */
         }
+        .social-links a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+        }
+        .feature {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .feature img {
+            width: 50px; /* Feature icon size */
+            margin-right: 10px;
+        }
     </style>
 </head>
 <body>
@@ -111,6 +153,13 @@
             <a href="#contact">Contact</a>
         </nav>
     </header>
+
+    <div class="hero">
+        <h1>Your Ultimate Travel Companion</h1>
+        <p>Stay safe and informed while exploring the world.</p>
+        <button class="cta-button">Get Started</button>
+    </div>
+
     <div class="container">
         <section id="about">
             <h2>About the App</h2>
@@ -118,12 +167,22 @@
         </section>
         <section id="features">
             <h2>Features</h2>
-            <ul>
-                <li>Real-Time Safety Alerts</li>
-                <li>Booking Integration</li>
-                <li>User Community Support</li>
-                <li>Destination Guides</li>
-            </ul>
+            <div class="feature">
+                <img src="path/to/alert-icon.png" alt="Safety Alerts Icon"> <!-- Replace with actual icon path -->
+                <p>Real-Time Safety Alerts</p>
+            </div>
+            <div class="feature">
+                <img src="path/to/booking-icon.png" alt="Booking Icon"> <!-- Replace with actual icon path -->
+                <p>Booking Integration</p>
+            </div>
+            <div class="feature">
+                <img src="path/to/community-icon.png" alt="Community Support Icon"> <!-- Replace with actual icon path -->
+                <p>User Community Support</p>
+            </div>
+            <div class="feature">
+                <img src="path/to/guides-icon.png" alt="Destination Guides Icon"> <!-- Replace with actual icon path -->
+                <p>Destination Guides</p>
+            </div>
         </section>
         <section id="gallery">
             <h2>Gallery</h2>
@@ -158,8 +217,14 @@
             </form>
         </section>
     </div>
+
     <footer>
         <p>&copy; 2024 Expedition Ally</p>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
     </footer>
 </body>
 </html>
