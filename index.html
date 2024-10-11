@@ -10,16 +10,16 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #eaf4f4; /* Light cyan background */
-            color: #333;
+            background-color: #f0f8ff; /* Light cyan background */
+            color: #222; /* Darker text for better readability */
             transition: background-color 0.3s ease;
         }
         header {
-            background-color: #005fa3; /* Darker blue header */
+            background-color: #003366; /* Dark navy header */
             color: white;
             padding: 20px;
             text-align: center;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
         nav {
             margin: 20px 0;
@@ -43,13 +43,25 @@
             text-align: center;
             position: relative;
         }
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+            z-index: 1;
+        }
         .hero h1 {
-            font-size: 3em;
+            font-size: 3.5em;
             margin: 0;
+            z-index: 2; /* Make sure text appears above overlay */
         }
         .hero p {
             font-size: 1.5em;
             margin: 10px 0;
+            z-index: 2; /* Make sure text appears above overlay */
         }
         .cta-button {
             background-color: #ffdd57; /* Yellow call to action */
@@ -60,6 +72,7 @@
             font-size: 1.2em;
             cursor: pointer;
             transition: background-color 0.3s ease;
+            z-index: 2; /* Make sure button appears above overlay */
         }
         .cta-button:hover {
             background-color: #ffd700; /* Darker yellow on hover */
@@ -76,7 +89,7 @@
         footer {
             text-align: center;
             padding: 20px 0;
-            background-color: #005fa3; /* Darker blue footer */
+            background-color: #003366; /* Darker blue footer */
             color: white;
             position: relative;
             bottom: 0;
@@ -142,6 +155,15 @@
             width: 50px; /* Feature icon size */
             margin-right: 10px;
         }
+        .faq {
+            margin-top: 30px;
+        }
+        .faq h2 {
+            margin-bottom: 10px;
+        }
+        .faq-item {
+            margin-bottom: 15px;
+        }
     </style>
 </head>
 <body>
@@ -165,25 +187,29 @@
     <div class="container">
         <section id="about">
             <h2>About the App</h2>
-            <p>Expedition Ally is your travel companion designed to keep you safe and informed during your journeys. Whether you're navigating through a new city or dealing with unexpected challenges, our app provides you with real-time alerts and valuable resources.</p>
+            <p>Expedition Ally is your travel companion designed to keep you safe and informed during your journeys. Whether you're navigating through a new city or dealing with unexpected challenges, our app provides you with real-time alerts and valuable resources. We believe that every traveler deserves peace of mind, and that's what we aim to deliver.</p>
         </section>
         <section id="features">
             <h2>Features</h2>
             <div class="feature">
                 <img src="path/to/alert-icon.png" alt="Safety Alerts Icon"> <!-- Replace with actual icon path -->
-                <p>Real-Time Safety Alerts: Get instant notifications about safety issues in your area.</p>
+                <p><strong>Real-Time Safety Alerts:</strong> Get instant notifications about safety issues in your area.</p>
             </div>
             <div class="feature">
                 <img src="path/to/booking-icon.png" alt="Booking Icon"> <!-- Replace with actual icon path -->
-                <p>Booking Integration: Seamlessly book flights, hotels, and rentals within the app.</p>
+                <p><strong>Booking Integration:</strong> Seamlessly book flights, hotels, and rentals within the app.</p>
             </div>
             <div class="feature">
                 <img src="path/to/community-icon.png" alt="Community Support Icon"> <!-- Replace with actual icon path -->
-                <p>User Community Support: Connect with fellow travelers to share tips and experiences.</p>
+                <p><strong>User Community Support:</strong> Connect with fellow travelers to share tips and experiences.</p>
             </div>
             <div class="feature">
                 <img src="path/to/guides-icon.png" alt="Destination Guides Icon"> <!-- Replace with actual icon path -->
-                <p>Destination Guides: Access curated guides with essential information for your journey.</p>
+                <p><strong>Destination Guides:</strong> Access curated guides with essential information for your journey.</p>
+            </div>
+            <div class="feature">
+                <img src="path/to/tips-icon.png" alt="Travel Tips Icon"> <!-- Replace with actual icon path -->
+                <p><strong>Expert Travel Tips:</strong> Get advice from seasoned travelers to enhance your travel experience.</p>
             </div>
         </section>
         <section id="gallery">
@@ -197,36 +223,4 @@
         <section id="testimonials">
             <h2>User Testimonials</h2>
             <blockquote>
-                <p>"Expedition Ally made my travel experience stress-free! I felt safe and well-informed throughout my trip!" - Alex T.</p>
-            </blockquote>
-            <blockquote>
-                <p>"The real-time alerts kept me updated on safety issues. I highly recommend this app to every traveler!" - Jamie L.</p>
-            </blockquote>
-        </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form action="https://formspree.io/f/mqkzjvva" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                
-                <input type="submit" value="Send">
-            </form>
-        </section>
-    </div>
-
-    <footer>
-        <p>&copy; 2024 Expedition Ally</p>
-        <div class="social-links">
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
-        </div>
-    </footer>
-</body>
-</html>
+                <p>"Expedition Ally made my travel experience stress-free! I felt safe and well-informed throughout my trip!" - Alex T.</
