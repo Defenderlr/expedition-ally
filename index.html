@@ -95,15 +95,6 @@
             width: 100%;
             margin-top: 20px;
         }
-        footer .social-links {
-            margin: 10px 0;
-        }
-        footer .social-links a {
-            margin: 0 10px;
-            color: white;
-            text-decoration: none;
-            font-size: 1.5em; /* Increase size for visibility */
-        }
         section {
             margin: 30px 0;
             padding: 20px 0;
@@ -195,37 +186,86 @@
         <section id="features">
             <h2>Features</h2>
             <div class="feature">
-                <img src="/Users/yessinebach/Downloads/1.jpeg" alt="Safety Alerts Icon"> <!-- Replace with actual icon path -->
+                <img src="https://img.icons8.com/ios-filled/50/000000/alert.png" alt="Safety Alerts Icon"> <!-- Safety Alerts Icon -->
                 <p><strong>Real-Time Safety Alerts:</strong> Get instant notifications about safety issues in your area.</p>
             </div>
             <div class="feature">
-                <img src="/Users/yessinebach/Downloads/2.jpeg" alt="Booking Icon"> <!-- Replace with actual icon path -->
+                <img src="https://img.icons8.com/ios-filled/50/000000/booking.png" alt="Booking Icon"> <!-- Booking Icon -->
                 <p><strong>Booking Integration:</strong> Seamlessly book flights, hotels, and rentals within the app.</p>
             </div>
             <div class="feature">
-                <img src="/Users/yessinebach/Downloads/3.jpeg" alt="Community Support Icon"> <!-- Replace with actual icon path -->
+                <img src="https://img.icons8.com/ios-filled/50/000000/community.png" alt="Community Support Icon"> <!-- Community Support Icon -->
                 <p><strong>User Community Support:</strong> Connect with fellow travelers to share tips and experiences.</p>
             </div>
             <div class="feature">
-                <img src="/Users/yessinebach/Downloads/1.jpeg" alt="Destination Guides Icon"> <!-- Replace with actual icon path -->
+                <img src="https://img.icons8.com/ios-filled/50/000000/guides.png" alt="Destination Guides Icon"> <!-- Destination Guides Icon -->
                 <p><strong>Destination Guides:</strong> Access curated guides with essential information for your journey.</p>
             </div>
             <div class="feature">
-                <img src="/Users/yessinebach/Downloads/2.jpeg" alt="Travel Tips Icon"> <!-- Replace with actual icon path -->
+                <img src="https://img.icons8.com/ios-filled/50/000000/tips.png" alt="Expert Travel Tips Icon"> <!-- Expert Travel Tips Icon -->
                 <p><strong>Expert Travel Tips:</strong> Get advice from seasoned travelers to enhance your travel experience.</p>
             </div>
             <div class="feature">
-                <img src="/Users/yessinebach/Downloads/3.jpeg" alt="Alerts Icon"> <!-- Replace with actual icon path -->
+                <img src="https://img.icons8.com/ios-filled/50/000000/alerts.png" alt="Customizable Alerts Icon"> <!-- Customizable Alerts Icon -->
                 <p><strong>Customizable Alerts:</strong> Personalize your alert settings based on your preferences and travel plans.</p>
             </div>
         </section>
         <section id="gallery">
             <h2>Gallery</h2>
             <div>
-                <img src="An_illustration_of_a_real_time_safety_alert_notifi.png" alt="Real-Time Safety Alerts">
-                <img src="A_mock-up_of_a_travel_app_interface_named_Expediti.png" alt="Booking Integration">
-                <img src="An_illustration_representing_the_community_support.png" alt="Community Support">
+                <img src="https://source.unsplash.com/featured/?safety" alt="Real-Time Safety Alerts">
+                <img src="https://source.unsplash.com/featured/?booking" alt="Booking Integration">
+                <img src="https://source.unsplash.com/featured/?community" alt="Community Support">
             </div>
         </section>
         <section id="testimonials">
-           
+            <h2>User Testimonials</h2>
+            <blockquote>
+                <p>"Expedition Ally made my travel experience stress-free! I felt safe and well-informed throughout my trip!" - Alex T.</p>
+            </blockquote>
+            <blockquote>
+                <p>"The real-time alerts kept me updated on safety issues. I highly recommend this app to every traveler!" - Jamie L.</p>
+            </blockquote>
+        </section>
+        <section id="faq" class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>What kind of alerts can I expect?</h3>
+                <p>Our app provides alerts related to safety issues, travel advisories, and local emergencies.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How can I book through the app?</h3>
+                <p>You can easily search for and book flights and accommodations directly within the app's booking section.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Is there a community feature?</h3>
+                <p>Yes! You can connect with other travelers to share experiences and tips.</p>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="https://formspree.io/f/mqkzjvva" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <input type="submit" value="Send">
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Expedition Ally</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>
